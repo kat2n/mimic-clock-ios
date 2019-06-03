@@ -5,15 +5,11 @@ class TabBarController: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let worldClock = WorldClockViewController()
-
-    let alarm = AlarmViewController()
-
-    let bedtime = BedtimeViewController()
-
-    let stopwatch = StopwatchViewController()
-
-    let timer = TimerViewController()
+    let worldClock = UINavigationController(rootViewController: WorldClockViewController())
+    let alarm = UINavigationController(rootViewController: AlarmViewController())
+    let bedtime = UINavigationController(rootViewController: BedtimeViewController())
+    let stopwatch = UINavigationController(rootViewController: StopwatchViewController())
+    let timer = UINavigationController(rootViewController: TimerViewController())
 
     viewControllers = [
       worldClock,

@@ -5,6 +5,7 @@ class WorldClockViewController: UIViewController {
   init() {
     super.init(nibName: nil, bundle: nil)
 
+    navigationItem.title = "World Clock"
     tabBarItem.title = "World Clock"
     tabBarItem.image = UIImage(named: "world-clock")
   }

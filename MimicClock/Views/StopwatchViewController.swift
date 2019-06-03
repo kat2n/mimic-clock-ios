@@ -5,6 +5,7 @@ class StopwatchViewController: UIViewController {
   init() {
     super.init(nibName: nil, bundle: nil)
 
+    navigationItem.title = "Stopwatch"
     tabBarItem.title = "Stopwatch"
     tabBarItem.image = UIImage(named: "stopwatch")
   }

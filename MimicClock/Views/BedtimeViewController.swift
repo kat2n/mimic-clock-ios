@@ -5,6 +5,7 @@ class BedtimeViewController: UIViewController {
   init() {
     super.init(nibName: nil, bundle: nil)
 
+    navigationItem.title = "Bedtime"
     tabBarItem.title = "Bedtime"
     tabBarItem.image = UIImage(named: "bedtime")
   }
