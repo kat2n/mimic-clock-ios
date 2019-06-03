@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19DDE1AAD8D1BE5018CCD39A /* MimicClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE10855D4FE18673A6719 /* MimicClockUITests.swift */; };
+		19DDE5D613855463FD7FAC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DDED94F09C9D5D8D16AF4E /* Assets.xcassets */; };
+		19DDEBC7E98CB0963522F8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEFB7C58D7A95F9371DE0 /* AppDelegate.swift */; };
+		19DDEC1B40351D9688D82161 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE71505889244DFADDFC2 /* ViewController.swift */; };
+		19DDEE2665840A3BD4A5AAFC /* MimicClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */; };
+		19DDEE96BCC15DBC452D5A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DDEA75B31E4A0CE313172B /* Main.storyboard */; };
+		19DDEE9F0343AD2A7E5C5EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DDE5792DAF19A9082D16B8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19DDE625C1FD653D30C57FA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19DDE13A1B88388BAB2624C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19DDE4665059AC2413460FB9;
+			remoteInfo = MimicClock;
+		};
+		19DDE687ECA7C5D6341FE919 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19DDE13A1B88388BAB2624C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19DDE4665059AC2413460FB9;
+			remoteInfo = MimicClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19DDE10420680C4E6E69CCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		19DDE10855D4FE18673A6719 /* MimicClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicClockUITests.swift; sourceTree = "<group>"; };
+		19DDE173D59ECEE304C616F5 /* MimicClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicClockTests.swift; sourceTree = "<group>"; };
+		19DDE6BEA3CD8A1302E6FD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		19DDE71505889244DFADDFC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19DDE7D595A84C21E6B08AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		19DDE81BD0918A1EAD56D216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19DDEA4AFFAD3A2D415AF3BE /* MimicClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimicClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DDED94F09C9D5D8D16AF4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19DDEDD48C3073DC6F9A04BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19DDEE7F00D1D1D3D278A51A /* MimicClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DDEFB7C58D7A95F9371DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19DDE0503339C48B4F67C1B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DDED9F219259B8ACABE601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DDEFE90B4449741919D85D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19DDE4DA224C3A5F6F7794EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19DDEA4AFFAD3A2D415AF3BE /* MimicClock.app */,
+				19DDEE7F00D1D1D3D278A51A /* MimicClockTests.xctest */,
+				19DDE173D59ECEE304C616F5 /* MimicClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19DDE9331031AB2ABCC0214C /* MimicClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				19DDE7D595A84C21E6B08AFB /* Info.plist */,
+				19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */,
+			);
+			path = MimicClockTests;
+			sourceTree = "<group>";
+		};
+		19DDEA178417FEE1C10BB9F3 /* MimicClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19DDE10420680C4E6E69CCE4 /* Info.plist */,
+				19DDE10855D4FE18673A6719 /* MimicClockUITests.swift */,
+			);
+			path = MimicClockUITests;
+			sourceTree = "<group>";
+		};
+		19DDEDA49C9384FBC8637598 = {
+			isa = PBXGroup;
+			children = (
+				19DDE4DA224C3A5F6F7794EF /* Products */,
+				19DDEDD1E60D560E9C67E638 /* MimicClock */,
+				19DDE9331031AB2ABCC0214C /* MimicClockTests */,
+				19DDEA178417FEE1C10BB9F3 /* MimicClockUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		19DDEDD1E60D560E9C67E638 /* MimicClock */ = {
+			isa = PBXGroup;
+			children = (
+				19DDE6BEA3CD8A1302E6FD8A /* Info.plist */,
+				19DDED94F09C9D5D8D16AF4E /* Assets.xcassets */,
+				19DDE5792DAF19A9082D16B8 /* LaunchScreen.storyboard */,
+				19DDEFB7C58D7A95F9371DE0 /* AppDelegate.swift */,
+				19DDEA75B31E4A0CE313172B /* Main.storyboard */,
+				19DDE71505889244DFADDFC2 /* ViewController.swift */,
+			);
+			path = MimicClock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19DDE12DD0D21E94CBB2E734 /* MimicClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DDE0A41F7DAB95C0F12CE1 /* Build configuration list for PBXNativeTarget "MimicClockTests" */;
+			buildPhases = (
+				19DDE20C966D7346192B6AE3 /* Sources */,
+				19DDE0503339C48B4F67C1B5 /* Frameworks */,
+				19DDE5EF6C700BDB53C3BDC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19DDE5D3EDB41FDE56BA02FA /* PBXTargetDependency */,
+			);
+			name = MimicClockTests;
+			productName = MimicClockTests;
+			productReference = 19DDEE7F00D1D1D3D278A51A /* MimicClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19DDE30DA61E3C6AAA2127B8 /* MimicClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DDEDA87420B2CE5D176555 /* Build configuration list for PBXNativeTarget "MimicClockUITests" */;
+			buildPhases = (
+				19DDE1F231296B4D0ECC0E86 /* Sources */,
+				19DDEFE90B4449741919D85D /* Frameworks */,
+				19DDE51F5A32D385654C94A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19DDE605D56336567579ADFF /* PBXTargetDependency */,
+			);
+			name = MimicClockUITests;
+			productName = MimicClockUITests;
+			productReference = 19DDE173D59ECEE304C616F5 /* MimicClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		19DDE4665059AC2413460FB9 /* MimicClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DDED324BA22C05B26BDF3F /* Build configuration list for PBXNativeTarget "MimicClock" */;
+			buildPhases = (
+				19DDE8B4D5D8BA12499F7114 /* Sources */,
+				19DDED9F219259B8ACABE601 /* Frameworks */,
+				19DDE15CCAB3090412DF568D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MimicClock;
+			productName = MimicClock;
+			productReference = 19DDEA4AFFAD3A2D415AF3BE /* MimicClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19DDE13A1B88388BAB2624C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = kat8n;
+			};
+			buildConfigurationList = 19DDEEECAE42232932D9CB25 /* Build configuration list for PBXProject "MimicClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 19DDEDA49C9384FBC8637598;
+			productRefGroup = 19DDE4DA224C3A5F6F7794EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19DDE4665059AC2413460FB9 /* MimicClock */,
+				19DDE12DD0D21E94CBB2E734 /* MimicClockTests */,
+				19DDE30DA61E3C6AAA2127B8 /* MimicClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19DDE15CCAB3090412DF568D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DDE5D613855463FD7FAC61 /* Assets.xcassets in Resources */,
+				19DDEE9F0343AD2A7E5C5EBF /* LaunchScreen.storyboard in Resources */,
+				19DDEE96BCC15DBC452D5A20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DDE51F5A32D385654C94A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DDE5EF6C700BDB53C3BDC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19DDE1F231296B4D0ECC0E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DDE1AAD8D1BE5018CCD39A /* MimicClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DDE20C966D7346192B6AE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DDEE2665840A3BD4A5AAFC /* MimicClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DDE8B4D5D8BA12499F7114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DDEBC7E98CB0963522F8A1 /* AppDelegate.swift in Sources */,
+				19DDEC1B40351D9688D82161 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19DDE5D3EDB41FDE56BA02FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19DDE4665059AC2413460FB9 /* MimicClock */;
+			targetProxy = 19DDE687ECA7C5D6341FE919 /* PBXContainerItemProxy */;
+		};
+		19DDE605D56336567579ADFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19DDE4665059AC2413460FB9 /* MimicClock */;
+			targetProxy = 19DDE625C1FD653D30C57FA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19DDE5792DAF19A9082D16B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19DDE81BD0918A1EAD56D216 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		19DDEA75B31E4A0CE313172B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19DDEDD48C3073DC6F9A04BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19DDE1873A27BB6D921E5955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MimicClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat8n.MimicClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MimicClock;
+			};
+			name = Release;
+		};
+		19DDE33140D468B377AE78B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MimicClock.app/MimicClock";
+				INFOPLIST_FILE = MimicClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat8n.MimicClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		19DDE33BEDF0FC6FB6C86030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MimicClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat8n.MimicClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19DDE5933B70ABF70F985B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MimicClock.app/MimicClock";
+				INFOPLIST_FILE = MimicClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat8n.MimicClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		19DDE9ACFB5B13D38888A33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19DDEA140785BD12C83B76D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MimicClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat8n.MimicClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19DDEC5C56DD93653124D18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19DDED63A6C312E49630275D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MimicClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat8n.MimicClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MimicClock;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19DDE0A41F7DAB95C0F12CE1 /* Build configuration list for PBXNativeTarget "MimicClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DDE5933B70ABF70F985B4D /* Debug */,
+				19DDE33140D468B377AE78B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19DDED324BA22C05B26BDF3F /* Build configuration list for PBXNativeTarget "MimicClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DDEA140785BD12C83B76D5 /* Debug */,
+				19DDE33BEDF0FC6FB6C86030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19DDEDA87420B2CE5D176555 /* Build configuration list for PBXNativeTarget "MimicClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DDED63A6C312E49630275D /* Debug */,
+				19DDE1873A27BB6D921E5955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19DDEEECAE42232932D9CB25 /* Build configuration list for PBXProject "MimicClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DDE9ACFB5B13D38888A33A /* Debug */,
+				19DDEC5C56DD93653124D18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19DDE13A1B88388BAB2624C5 /* Project object */;
+}
