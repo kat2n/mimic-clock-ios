@@ -5,13 +5,24 @@ class TabBarController: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let main = MainViewController()
-    main.tabBarItem.title = "Main"
-//    main.tabBarItem.image = UIImage(named: image)
+    let worldClock = WorldClockViewController()
+
+    let alarm = AlarmViewController()
+
+    let bedtime = BedtimeViewController()
+
+    let stopwatch = StopwatchViewController()
+
+    let timer = TimerViewController()
 
     viewControllers = [
-      main,
+      worldClock,
+      alarm,
+      bedtime,
+      stopwatch,
+      timer,
     ]
   }
 
 }
+
