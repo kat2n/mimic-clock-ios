@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		19DDE1AAD8D1BE5018CCD39A /* MimicClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE10855D4FE18673A6719 /* MimicClockUITests.swift */; };
 		19DDE5D613855463FD7FAC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DDED94F09C9D5D8D16AF4E /* Assets.xcassets */; };
+		19DDE8A409A9AD437DA98687 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE6E9F53691BCB6D58729 /* MainViewController.swift */; };
 		19DDEBC7E98CB0963522F8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEFB7C58D7A95F9371DE0 /* AppDelegate.swift */; };
-		19DDEC1B40351D9688D82161 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE71505889244DFADDFC2 /* ViewController.swift */; };
 		19DDEE2665840A3BD4A5AAFC /* MimicClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */; };
-		19DDEE96BCC15DBC452D5A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DDEA75B31E4A0CE313172B /* Main.storyboard */; };
 		19DDEE9F0343AD2A7E5C5EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DDE5792DAF19A9082D16B8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -39,12 +38,11 @@
 		19DDE173D59ECEE304C616F5 /* MimicClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicClockTests.swift; sourceTree = "<group>"; };
 		19DDE6BEA3CD8A1302E6FD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		19DDE71505889244DFADDFC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19DDE6E9F53691BCB6D58729 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		19DDE7D595A84C21E6B08AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		19DDE81BD0918A1EAD56D216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19DDEA4AFFAD3A2D415AF3BE /* MimicClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimicClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DDED94F09C9D5D8D16AF4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		19DDEDD48C3073DC6F9A04BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19DDEE7F00D1D1D3D278A51A /* MimicClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DDEFB7C58D7A95F9371DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19DDE022C1CF2DD1212B79AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19DDE6E9F53691BCB6D58729 /* MainViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		19DDE4DA224C3A5F6F7794EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +125,7 @@
 				19DDED94F09C9D5D8D16AF4E /* Assets.xcassets */,
 				19DDE5792DAF19A9082D16B8 /* LaunchScreen.storyboard */,
 				19DDEFB7C58D7A95F9371DE0 /* AppDelegate.swift */,
-				19DDEA75B31E4A0CE313172B /* Main.storyboard */,
-				19DDE71505889244DFADDFC2 /* ViewController.swift */,
+				19DDE022C1CF2DD1212B79AC /* Views */,
 			);
 			path = MimicClock;
 			sourceTree = "<group>";
@@ -217,7 +222,6 @@
 			files = (
 				19DDE5D613855463FD7FAC61 /* Assets.xcassets in Resources */,
 				19DDEE9F0343AD2A7E5C5EBF /* LaunchScreen.storyboard in Resources */,
-				19DDEE96BCC15DBC452D5A20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DDEBC7E98CB0963522F8A1 /* AppDelegate.swift in Sources */,
-				19DDEC1B40351D9688D82161 /* ViewController.swift in Sources */,
+				19DDE8A409A9AD437DA98687 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +289,6 @@
 				19DDE81BD0918A1EAD56D216 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		19DDEA75B31E4A0CE313172B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19DDEDD48C3073DC6F9A04BA /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
