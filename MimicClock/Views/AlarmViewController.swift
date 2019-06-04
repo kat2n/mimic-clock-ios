@@ -5,7 +5,10 @@ class AlarmViewController: UIViewController {
   init() {
     super.init(nibName: nil, bundle: nil)
 
+    navigationItem.leftBarButtonItem = editButtonItem
     navigationItem.title = "Alarm"
+    navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(handleAddButton))
+
     tabBarItem.title = "Alarm"
     tabBarItem.image = UIImage(named: "alarm")
   }
@@ -17,7 +20,10 @@ class AlarmViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    view.backgroundColor = .yellow
+    view.backgroundColor = Color.black
+  }
+
+  @objc func handleAddButton() {
   }
 
 }

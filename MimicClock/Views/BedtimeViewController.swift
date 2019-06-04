@@ -6,6 +6,7 @@ class BedtimeViewController: UIViewController {
     super.init(nibName: nil, bundle: nil)
 
     navigationItem.title = "Bedtime"
+
     tabBarItem.title = "Bedtime"
     tabBarItem.image = UIImage(named: "bedtime")
   }
@@ -17,7 +18,7 @@ class BedtimeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    view.backgroundColor = .green
+    view.backgroundColor = Color.black
   }
 
 }

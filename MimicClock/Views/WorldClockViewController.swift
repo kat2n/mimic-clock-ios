@@ -5,7 +5,10 @@ class WorldClockViewController: UIViewController {
   init() {
     super.init(nibName: nil, bundle: nil)
 
+    navigationItem.leftBarButtonItem = editButtonItem
     navigationItem.title = "World Clock"
+    navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(handleAddButton))
+
     tabBarItem.title = "World Clock"
     tabBarItem.image = UIImage(named: "world-clock")
   }
@@ -17,7 +20,10 @@ class WorldClockViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    view.backgroundColor = .red
+    view.backgroundColor = Color.black
+  }
+
+  @objc func handleAddButton() {
   }
 
 }

@@ -6,6 +6,7 @@ class StopwatchViewController: UIViewController {
     super.init(nibName: nil, bundle: nil)
 
     navigationItem.title = "Stopwatch"
+
     tabBarItem.title = "Stopwatch"
     tabBarItem.image = UIImage(named: "stopwatch")
   }
@@ -17,7 +18,7 @@ class StopwatchViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    view.backgroundColor = .blue
+    view.backgroundColor = Color.black
   }
 
 }

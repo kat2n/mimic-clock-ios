@@ -6,6 +6,7 @@ class TimerViewController: UIViewController {
     super.init(nibName: nil, bundle: nil)
 
     navigationItem.title = "Timer"
+
     tabBarItem.title = "Timer"
     tabBarItem.image = UIImage(named: "timer")
   }
@@ -17,7 +18,7 @@ class TimerViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    view.backgroundColor = .purple
+    view.backgroundColor = Color.black
   }
 
 }
