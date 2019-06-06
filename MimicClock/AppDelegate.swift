@@ -42,6 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   private func initUINavigationBarAppearance() {
+    UINavigationBar.appearance().barStyle = .black
     UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: Color.white]
     UINavigationBar.appearance().tintColor = Color.orange
     UINavigationBar.appearance().barTintColor = Color.lightBlack
