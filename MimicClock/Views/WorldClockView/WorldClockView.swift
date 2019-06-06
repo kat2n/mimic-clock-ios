@@ -1,6 +1,6 @@
 import UIKit
 
-class WorldCloclView: UIView {
+class WorldClockView: UIView {
 
   var ctrl: WorldClockViewController!
 
