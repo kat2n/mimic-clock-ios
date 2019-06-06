@@ -42,12 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   private func initUINavigationBarAppearance() {
-    UINavigationBar.appearance().barStyle = .black
-    UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: Color.white]
-    UINavigationBar.appearance().tintColor = Color.orange
-    UINavigationBar.appearance().barTintColor = Color.lightBlack
-    UINavigationBar.appearance().isTranslucent = false
-    UINavigationBar.appearance().shadowImage = {
+    let it = UINavigationBar.appearance()
+    it.barStyle = .black
+    it.titleTextAttributes = [.foregroundColor: Color.white]
+    it.tintColor = Color.orange
+    it.barTintColor = Color.lightBlack
+    it.isTranslucent = false
+    it.shadowImage = {
       UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
       UIGraphicsGetCurrentContext()?.setFillColor(Color.darkGray.cgColor)
       UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
