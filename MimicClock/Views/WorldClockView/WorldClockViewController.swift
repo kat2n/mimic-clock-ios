@@ -2,8 +2,12 @@ import UIKit
 
 class WorldClockViewController: UIViewController {
 
+  var model: WorldClockViewModel!
+
   init() {
     super.init(nibName: nil, bundle: nil)
+
+    model = WorldClockViewModel()
 
     navigationItem.leftBarButtonItem = editButtonItem
     navigationItem.title = "World Clock"
@@ -17,10 +21,12 @@ class WorldClockViewController: UIViewController {
     super.init(coder: aDecoder)
   }
 
+  override func loadView() {
+    view = WorldCloclView(self)
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    view.backgroundColor = Color.black
   }
 
   @objc func handleAddButton() {
