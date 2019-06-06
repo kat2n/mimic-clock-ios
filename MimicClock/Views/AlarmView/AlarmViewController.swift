@@ -2,8 +2,12 @@ import UIKit
 
 class AlarmViewController: UIViewController {
 
+  var model: AlarmViewModel!
+
   init() {
     super.init(nibName: nil, bundle: nil)
+
+    self.model = AlarmViewModel()
 
     navigationItem.leftBarButtonItem = editButtonItem
     navigationItem.title = "Alarm"
@@ -21,6 +25,8 @@ class AlarmViewController: UIViewController {
     super.viewDidLoad()
 
     view.backgroundColor = Color.black
+
+    model.testRealm()
   }
 
   @objc func handleAddButton() {
