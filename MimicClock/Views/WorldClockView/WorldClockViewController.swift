@@ -30,6 +30,7 @@ class WorldClockViewController: UIViewController {
   }
 
   @objc func handleAddButton() {
+    present(AddWorldClockViewController(), animated: true)
   }
 
 }
