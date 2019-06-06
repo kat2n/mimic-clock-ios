@@ -22,7 +22,7 @@ class WorldClockViewController: UIViewController {
   }
 
   override func loadView() {
-    view = WorldCloclView(self)
+    view = WorldClockView(self)
   }
 
   override func viewDidLoad() {
