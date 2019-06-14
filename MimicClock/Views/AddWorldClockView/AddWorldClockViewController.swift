@@ -4,8 +4,6 @@ class AddWorldClockViewController: AppViewController {
 
   var model: AddWorldClockViewModel!
 
-  var data: [String] = ["aaa", "bbb", "ccc"]
-
   init() {
     super.init(nibName: nil, bundle: nil)
 
