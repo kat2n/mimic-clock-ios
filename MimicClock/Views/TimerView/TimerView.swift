@@ -1,10 +1,10 @@
 import UIKit
 
-class WorldClockView: AppView {
+class TimerView: AppView {
 
-  var ctrl: WorldClockViewController!
+  var ctrl: TimerViewController!
 
-  init(_ ctrl: WorldClockViewController) {
+  init(_ ctrl: TimerViewController!) {
     super.init(frame: .zero)
 
     self.ctrl = ctrl

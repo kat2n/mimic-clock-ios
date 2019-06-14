@@ -1,9 +1,13 @@
 import UIKit
 
-class BedtimeViewController: UIViewController {
+class BedtimeViewController: AppViewController {
+
+  var model: BedtimeViewModel!
 
   init() {
     super.init(nibName: nil, bundle: nil)
+
+    self.model = BedtimeViewModel()
 
     navigationItem.title = "Bedtime"
 
@@ -15,10 +19,14 @@ class BedtimeViewController: UIViewController {
     super.init(coder: aDecoder)
   }
 
+  override func loadView() {
+    super.loadView()
+
+    view = BedtimeView(self)
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    view.backgroundColor = ColorScheme.black
   }
 
 }

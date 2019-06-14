@@ -1,9 +1,13 @@
 import UIKit
 
-class StopwatchViewController: UIViewController {
+class StopwatchViewController: AppViewController {
+
+  var model: StopwatchViewModel!
 
   init() {
     super.init(nibName: nil, bundle: nil)
+
+    self.model = StopwatchViewModel()
 
     navigationItem.title = "Stopwatch"
 
@@ -15,10 +19,14 @@ class StopwatchViewController: UIViewController {
     super.init(coder: aDecoder)
   }
 
+  override func loadView() {
+    super.loadView()
+
+    view = StopwatchView(self)
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    view.backgroundColor = ColorScheme.black
   }
 
 }

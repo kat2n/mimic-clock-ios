@@ -6,7 +6,6 @@ class AddWorldClockView: UIView {
   private let headerViewHeight: CGFloat = 88
 
   var ctrl: AddWorldClockViewController!
-
   var tableView: UITableView!
   var titleLabel: UILabel!
   var searchBar: UISearchBar!
@@ -64,7 +63,6 @@ class AddWorldClockView: UIView {
     it.showsCancelButton = true
     (it.value(forKey: "_cancelButton") as! UIButton).isEnabled = true
     it.keyboardAppearance = .dark
-
     return it
   }
 

@@ -22,6 +22,8 @@ class WorldClockViewController: AppViewController {
   }
 
   override func loadView() {
+    super.loadView()
+
     view = WorldClockView(self)
   }
 

@@ -1,9 +1,13 @@
 import UIKit
 
-class TimerViewController: UIViewController {
+class TimerViewController: AppViewController {
+
+  var model: TimerViewModel!
 
   init() {
     super.init(nibName: nil, bundle: nil)
+
+    self.model = TimerViewModel()
 
     navigationItem.title = "Timer"
 
@@ -15,10 +19,14 @@ class TimerViewController: UIViewController {
     super.init(coder: aDecoder)
   }
 
+  override func loadView() {
+    super.loadView()
+
+    view = TimerView(self)
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    view.backgroundColor = ColorScheme.black
   }
 
 }
