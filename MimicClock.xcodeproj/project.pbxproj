@@ -34,10 +34,10 @@
 		19DDED1F0C0B4FFEE7CFC2AB /* AddWorldClockViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE9C39F648FD715D85535 /* AddWorldClockViewController+UITableViewDataSource.swift */; };
 		19DDED218E2432E78F886702 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE9D9C95123B839F2672C /* Alarm.swift */; };
 		19DDED4A966AE7737CEDD1C1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE846F1C34BEF446763E6 /* TimerView.swift */; };
+		19DDEDB94EBA3FAB4306294C /* AddWorldClockViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE0D56FCC5AFC5AA78EEA /* AddWorldClockViewModelTests.swift */; };
 		19DDEDF4F8779C9FA332D676 /* AddWorldClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEFBAD5FF883C29855065 /* AddWorldClockViewModel.swift */; };
 		19DDEE179848D67998F80209 /* BedtimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE8B2067950B1CFC31360 /* BedtimeViewController.swift */; };
 		19DDEE2376859D2BA46CE78C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEAFD51EF40B228664071 /* AppView.swift */; };
-		19DDEE2665840A3BD4A5AAFC /* MimicClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */; };
 		19DDEE9F0343AD2A7E5C5EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DDE5792DAF19A9082D16B8 /* LaunchScreen.storyboard */; };
 		19DDEF61B6E8EE04FD6B1471 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE27F939F509F30C2AE14 /* AlarmViewModel.swift */; };
 		19DDEF7514DDA397AE10C62D /* AddWorldClockViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE5E50FE71527DC33FD22 /* AddWorldClockViewCell.swift */; };
@@ -69,13 +69,13 @@
 		19DDE026B5915C1CF57733E7 /* StopwatchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchViewModel.swift; sourceTree = "<group>"; };
 		19DDE068B3B9C89C726235C5 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		19DDE0CD5923BAE0BD281456 /* BedtimeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedtimeViewModel.swift; sourceTree = "<group>"; };
+		19DDE0D56FCC5AFC5AA78EEA /* AddWorldClockViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorldClockViewModelTests.swift; sourceTree = "<group>"; };
 		19DDE10420680C4E6E69CCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		19DDE10855D4FE18673A6719 /* MimicClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicClockUITests.swift; sourceTree = "<group>"; };
 		19DDE173D59ECEE304C616F5 /* MimicClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DDE21AF13D40FCB1607B74 /* AlarmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		19DDE27F939F509F30C2AE14 /* AlarmViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 		19DDE3FD70021E15DB5589A9 /* StopwatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
-		19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicClockTests.swift; sourceTree = "<group>"; };
 		19DDE5E50FE71527DC33FD22 /* AddWorldClockViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorldClockViewCell.swift; sourceTree = "<group>"; };
 		19DDE5E72B6649449C8EE42D /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		19DDE67D47C2DF7BA5F119DC /* WorldClockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockViewModel.swift; sourceTree = "<group>"; };
@@ -167,6 +167,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		19DDE347378AD96DE7ED0BE7 /* AddWorldClockView */ = {
+			isa = PBXGroup;
+			children = (
+				19DDE0D56FCC5AFC5AA78EEA /* AddWorldClockViewModelTests.swift */,
+			);
+			path = AddWorldClockView;
+			sourceTree = "<group>";
+		};
 		19DDE35D43B551B97AFF792C /* AddWorldClockView */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,7 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				19DDE7D595A84C21E6B08AFB /* Info.plist */,
-				19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */,
+				19DDEE9B94C21D722C2FA4FE /* Views */,
 			);
 			path = MimicClockTests;
 			sourceTree = "<group>";
@@ -294,6 +302,14 @@
 				19DDE3FD70021E15DB5589A9 /* StopwatchView.swift */,
 			);
 			path = StopwatchView;
+			sourceTree = "<group>";
+		};
+		19DDEE9B94C21D722C2FA4FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19DDE347378AD96DE7ED0BE7 /* AddWorldClockView */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		469915D522A864870026DA56 /* Frameworks */ = {
@@ -457,7 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19DDEE2665840A3BD4A5AAFC /* MimicClockTests.swift in Sources */,
+				19DDEDB94EBA3FAB4306294C /* AddWorldClockViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
