@@ -24,7 +24,7 @@ class AlarmViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    view.backgroundColor = Color.black
+    view.backgroundColor = ColorScheme.black
 
     model.testRealm()
   }

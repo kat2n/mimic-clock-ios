@@ -36,8 +36,8 @@ class AddWorldClockView: UIView {
     it.delegate = ctrl
     it.dataSource = ctrl
     it.translatesAutoresizingMaskIntoConstraints = false
-    it.backgroundColor = Color.modalBackground
-    it.sectionIndexColor = Color.orange
+    it.backgroundColor = ColorScheme.modalBackground
+    it.sectionIndexColor = ColorScheme.orange
     it.contentInset.top = headerViewHeight
     return it
   }
@@ -46,7 +46,7 @@ class AddWorldClockView: UIView {
     let it = UILabel()
     it.translatesAutoresizingMaskIntoConstraints = false
     it.text = "Choose a City."
-    it.textColor = Color.white
+    it.textColor = ColorScheme.white
     it.font = UIFont.systemFont(ofSize: UIFont.systemFontSize - 2)
     return it
   }
@@ -56,9 +56,9 @@ class AddWorldClockView: UIView {
     it.delegate = ctrl
     it.translatesAutoresizingMaskIntoConstraints = false
     it.placeholder = "Search"
-    (it.value(forKey: "_searchField") as! UITextField).textColor = Color.white
-    (it.value(forKey: "_searchField") as! UITextField).backgroundColor = Color.searchTextFieldBackground
-    it.tintColor = Color.orange
+    (it.value(forKey: "_searchField") as! UITextField).textColor = ColorScheme.white
+    (it.value(forKey: "_searchField") as! UITextField).backgroundColor = ColorScheme.searchTextFieldBackground
+    it.tintColor = ColorScheme.orange
     it.backgroundImage = UIImage()
     it.autocapitalizationType = .none
     it.showsCancelButton = true
@@ -81,8 +81,8 @@ class AddWorldClockView: UIView {
   private func createHeaderView() -> UIView {
     let it = UIView()
     it.translatesAutoresizingMaskIntoConstraints = false
-    it.backgroundColor = Color.modalBackground
-    it.layer.shadowColor = Color.darkGray.cgColor
+    it.backgroundColor = ColorScheme.modalBackground
+    it.layer.shadowColor = ColorScheme.darkGray.cgColor
     it.layer.shadowOffset = CGSize(width: 0, height: 1)
     it.layer.shadowOpacity = 1
     it.layer.shadowRadius = 0

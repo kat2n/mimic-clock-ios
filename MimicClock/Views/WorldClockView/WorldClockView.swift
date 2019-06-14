@@ -8,7 +8,7 @@ class WorldClockView: UIView {
     self.ctrl = ctrl
     super.init(frame: .zero)
 
-    backgroundColor = Color.black
+    backgroundColor = ColorScheme.black
 
   }
 

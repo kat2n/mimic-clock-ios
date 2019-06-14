@@ -1,6 +1,6 @@
 import UIKit
 
-class Color {
+class ColorScheme {
 
   static let white = UIColor(red: 254 / 255, green: 255 / 255, blue: 255 / 255, alpha: 1)
   static let orange = UIColor(red: 239 / 255, green: 154 / 255, blue: 56 / 255, alpha: 1)
