@@ -7,12 +7,12 @@ extension AddWorldClockViewController: UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return data.count
+    return model.data.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: AddWorldClockViewCell.id, for: indexPath) as! AddWorldClockViewCell
-    cell.render(data[indexPath.row])
+    cell.render(model.data[indexPath.row])
     return cell
   }
 
