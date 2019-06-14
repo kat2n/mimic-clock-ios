@@ -1,13 +1,13 @@
 import UIKit
 
-class WorldClockViewController: UIViewController {
+class WorldClockViewController: AppViewController {
 
   var model: WorldClockViewModel!
 
   init() {
     super.init(nibName: nil, bundle: nil)
 
-    model = WorldClockViewModel()
+    self.model = WorldClockViewModel()
 
     navigationItem.leftBarButtonItem = editButtonItem
     navigationItem.title = "World Clock"

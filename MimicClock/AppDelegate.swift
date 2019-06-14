@@ -8,11 +8,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
 
-    initUINavigationBarAppearance()
-    initUITabBarAppearance()
+    AppNavigationBar.setUp()
+    AppTabBar.setUp()
 
     window = UIWindow(frame: UIScreen.main.bounds)
-    window?.rootViewController = TabBarController()
+    window?.rootViewController = AppTabBarController()
     window?.makeKeyAndVisible()
 
     return true
@@ -39,45 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-  }
-
-  private func initUINavigationBarAppearance() {
-    let it = UINavigationBar.appearance()
-    it.barStyle = .black
-    it.titleTextAttributes = [.foregroundColor: Color.white]
-    it.tintColor = Color.orange
-    it.barTintColor = Color.lightBlack
-    it.isTranslucent = false
-    it.shadowImage = {
-      UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
-      UIGraphicsGetCurrentContext()?.setFillColor(Color.darkGray.cgColor)
-      UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
-      let image = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
-      UIGraphicsEndImageContext()
-      return image
-    }()
-  }
-
-  private func initUITabBarAppearance() {
-    let it = UITabBar.appearance()
-    it.selectedImageTintColor = Color.orange
-    it.unselectedItemTintColor = Color.gray
-    it.backgroundImage = {
-      UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
-      UIGraphicsGetCurrentContext()?.setFillColor(Color.lightBlack.cgColor)
-      UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
-      let image = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
-      UIGraphicsEndImageContext()
-      return image
-    }()
-    it.shadowImage = {
-      UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
-      UIGraphicsGetCurrentContext()?.setFillColor(Color.darkGray.cgColor)
-      UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
-      let image = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
-      UIGraphicsEndImageContext()
-      return image
-    }()
   }
 
 }

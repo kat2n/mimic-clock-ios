@@ -1,12 +1,15 @@
 import UIKit
 
-class AddWorldClockViewController: UIViewController {
+class AddWorldClockViewController: AppViewController {
 
   var model: AddWorldClockViewModel!
 
+  var data: [String] = ["aaa", "bbb", "ccc"]
+
   init() {
-    self.model = AddWorldClockViewModel()
     super.init(nibName: nil, bundle: nil)
+
+    self.model = AddWorldClockViewModel()
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -24,3 +27,4 @@ class AddWorldClockViewController: UIViewController {
   }
 
 }
+
