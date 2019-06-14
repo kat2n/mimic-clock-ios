@@ -7,7 +7,7 @@ class AddWorldClockViewCell: UITableViewCell {
   override init(style: CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-    backgroundColor = Color.modalBackground
+    backgroundColor = ColorScheme.modalBackground
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -23,7 +23,7 @@ class AddWorldClockViewCell: UITableViewCell {
   }
 
   func render(_ data: String) {
-    textLabel?.textColor = Color.white
+    textLabel?.textColor = ColorScheme.white
     textLabel?.text = data
   }
 

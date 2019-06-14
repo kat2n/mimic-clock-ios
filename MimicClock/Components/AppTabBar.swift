@@ -4,11 +4,11 @@ class AppTabBar: UIView {
 
   class func setUp() {
     let it = UITabBar.appearance()
-    it.selectedImageTintColor = Color.orange
-    it.unselectedItemTintColor = Color.gray
+    it.selectedImageTintColor = ColorScheme.orange
+    it.unselectedItemTintColor = ColorScheme.gray
     it.backgroundImage = {
       UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
-      UIGraphicsGetCurrentContext()?.setFillColor(Color.lightBlack.cgColor)
+      UIGraphicsGetCurrentContext()?.setFillColor(ColorScheme.lightBlack.cgColor)
       UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
       let image = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
       UIGraphicsEndImageContext()
@@ -16,7 +16,7 @@ class AppTabBar: UIView {
     }()
     it.shadowImage = {
       UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
-      UIGraphicsGetCurrentContext()?.setFillColor(Color.darkGray.cgColor)
+      UIGraphicsGetCurrentContext()?.setFillColor(ColorScheme.darkGray.cgColor)
       UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
       let image = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
       UIGraphicsEndImageContext()

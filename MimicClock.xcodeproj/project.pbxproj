@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		19DDE056D3A5187F734423EB /* WorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE00DDB83641669FC1103 /* WorldClockView.swift */; };
+		19DDE083A3D25A60119786DB /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE3FD70021E15DB5589A9 /* StopwatchView.swift */; };
 		19DDE0C57A34C09CB577D32B /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE7F9998BEB79A9D3D9F7 /* WorldClockViewController.swift */; };
+		19DDE18E616D872A8F6B932D /* BedtimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE0CD5923BAE0BD281456 /* BedtimeViewModel.swift */; };
 		19DDE1AAD8D1BE5018CCD39A /* MimicClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE10855D4FE18673A6719 /* MimicClockUITests.swift */; };
 		19DDE2080C36CF8824A6B640 /* AddWorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE8F76104A0DE25C8CC35 /* AddWorldClockView.swift */; };
 		19DDE21E8C0D1F742CF8CD77 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE818195D39163C1483A2 /* StopwatchViewController.swift */; };
@@ -22,13 +24,19 @@
 		19DDE72F2125BA82C23A5550 /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDECA7B263BCDA06B42138 /* AppTabBar.swift */; };
 		19DDE73318B3943BA6993A47 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEDD5FC3A4CC8DC27D2D7 /* AlarmViewController.swift */; };
 		19DDE882B7BE5777625C5CAD /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEC58CE6DB22EF4EACEAB /* AppTabBarController.swift */; };
+		19DDE9B42D2EA642A2F4557C /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE21AF13D40FCB1607B74 /* AlarmView.swift */; };
+		19DDEA96571750BBD827AA75 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEECCBA93843AFD3D42A0 /* TimerViewModel.swift */; };
+		19DDEB337998C5BDFE09FDD3 /* StopwatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE026B5915C1CF57733E7 /* StopwatchViewModel.swift */; };
 		19DDEB5639BC3B7A83FA9E0C /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE068B3B9C89C726235C5 /* AppViewController.swift */; };
 		19DDEBC7E98CB0963522F8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEFB7C58D7A95F9371DE0 /* AppDelegate.swift */; };
-		19DDEBD89BC25A7CA858AF9F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE843F2C2936EA4E71A27 /* Color.swift */; };
+		19DDEBD89BC25A7CA858AF9F /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE843F2C2936EA4E71A27 /* ColorScheme.swift */; };
+		19DDEBF3F31CCA77649AFD50 /* BedtimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEEACBF6749FA8046A4EF /* BedtimeView.swift */; };
 		19DDED1F0C0B4FFEE7CFC2AB /* AddWorldClockViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE9C39F648FD715D85535 /* AddWorldClockViewController+UITableViewDataSource.swift */; };
 		19DDED218E2432E78F886702 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE9D9C95123B839F2672C /* Alarm.swift */; };
+		19DDED4A966AE7737CEDD1C1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE846F1C34BEF446763E6 /* TimerView.swift */; };
 		19DDEDF4F8779C9FA332D676 /* AddWorldClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEFBAD5FF883C29855065 /* AddWorldClockViewModel.swift */; };
 		19DDEE179848D67998F80209 /* BedtimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE8B2067950B1CFC31360 /* BedtimeViewController.swift */; };
+		19DDEE2376859D2BA46CE78C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDEAFD51EF40B228664071 /* AppView.swift */; };
 		19DDEE2665840A3BD4A5AAFC /* MimicClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */; };
 		19DDEE9F0343AD2A7E5C5EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DDE5792DAF19A9082D16B8 /* LaunchScreen.storyboard */; };
 		19DDEF61B6E8EE04FD6B1471 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDE27F939F509F30C2AE14 /* AlarmViewModel.swift */; };
@@ -58,11 +66,15 @@
 /* Begin PBXFileReference section */
 		19DDE00DDB83641669FC1103 /* WorldClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockView.swift; sourceTree = "<group>"; };
 		19DDE02191FC149FA913A013 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		19DDE026B5915C1CF57733E7 /* StopwatchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchViewModel.swift; sourceTree = "<group>"; };
 		19DDE068B3B9C89C726235C5 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		19DDE0CD5923BAE0BD281456 /* BedtimeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedtimeViewModel.swift; sourceTree = "<group>"; };
 		19DDE10420680C4E6E69CCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		19DDE10855D4FE18673A6719 /* MimicClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicClockUITests.swift; sourceTree = "<group>"; };
 		19DDE173D59ECEE304C616F5 /* MimicClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DDE21AF13D40FCB1607B74 /* AlarmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		19DDE27F939F509F30C2AE14 /* AlarmViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		19DDE3FD70021E15DB5589A9 /* StopwatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		19DDE46A9A48AAEAE90D1B1A /* MimicClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicClockTests.swift; sourceTree = "<group>"; };
 		19DDE5E50FE71527DC33FD22 /* AddWorldClockViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorldClockViewCell.swift; sourceTree = "<group>"; };
 		19DDE5E72B6649449C8EE42D /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -73,12 +85,14 @@
 		19DDE7F9998BEB79A9D3D9F7 /* WorldClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
 		19DDE818195D39163C1483A2 /* StopwatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		19DDE81BD0918A1EAD56D216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		19DDE843F2C2936EA4E71A27 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		19DDE843F2C2936EA4E71A27 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		19DDE846F1C34BEF446763E6 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		19DDE8B2067950B1CFC31360 /* BedtimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedtimeViewController.swift; sourceTree = "<group>"; };
 		19DDE8F76104A0DE25C8CC35 /* AddWorldClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorldClockView.swift; sourceTree = "<group>"; };
 		19DDE9C39F648FD715D85535 /* AddWorldClockViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddWorldClockViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		19DDE9D9C95123B839F2672C /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		19DDEA4AFFAD3A2D415AF3BE /* MimicClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimicClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DDEAFD51EF40B228664071 /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		19DDEB9007EC1170C84D86EE /* AddWorldClockViewController+UISearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddWorldClockViewController+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		19DDEBB527CACCCF63B9E32C /* AddWorldClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorldClockViewController.swift; sourceTree = "<group>"; };
 		19DDEC58CE6DB22EF4EACEAB /* AppTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
@@ -87,6 +101,8 @@
 		19DDED94F09C9D5D8D16AF4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19DDEDD5FC3A4CC8DC27D2D7 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		19DDEE7F00D1D1D3D278A51A /* MimicClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DDEEACBF6749FA8046A4EF /* BedtimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedtimeView.swift; sourceTree = "<group>"; };
+		19DDEECCBA93843AFD3D42A0 /* TimerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		19DDEFB7C58D7A95F9371DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19DDEFBAD5FF883C29855065 /* AddWorldClockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorldClockViewModel.swift; sourceTree = "<group>"; };
 		469915D622A864870026DA56 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
@@ -170,6 +186,7 @@
 			children = (
 				19DDEDD5FC3A4CC8DC27D2D7 /* AlarmViewController.swift */,
 				19DDE27F939F509F30C2AE14 /* AlarmViewModel.swift */,
+				19DDE21AF13D40FCB1607B74 /* AlarmView.swift */,
 			);
 			path = AlarmView;
 			sourceTree = "<group>";
@@ -187,7 +204,7 @@
 		19DDE571687CD5BCC90D5D7F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				19DDE843F2C2936EA4E71A27 /* Color.swift */,
+				19DDE843F2C2936EA4E71A27 /* ColorScheme.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -200,6 +217,7 @@
 				19DDE02191FC149FA913A013 /* AppNavigationController.swift */,
 				19DDECA7B263BCDA06B42138 /* AppTabBar.swift */,
 				19DDEC58CE6DB22EF4EACEAB /* AppTabBarController.swift */,
+				19DDEAFD51EF40B228664071 /* AppView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -208,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				19DDE8B2067950B1CFC31360 /* BedtimeViewController.swift */,
+				19DDE0CD5923BAE0BD281456 /* BedtimeViewModel.swift */,
+				19DDEEACBF6749FA8046A4EF /* BedtimeView.swift */,
 			);
 			path = BedtimeView;
 			sourceTree = "<group>";
@@ -234,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				19DDE5E72B6649449C8EE42D /* TimerViewController.swift */,
+				19DDEECCBA93843AFD3D42A0 /* TimerViewModel.swift */,
+				19DDE846F1C34BEF446763E6 /* TimerView.swift */,
 			);
 			path = TimerView;
 			sourceTree = "<group>";
@@ -268,6 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				19DDE818195D39163C1483A2 /* StopwatchViewController.swift */,
+				19DDE026B5915C1CF57733E7 /* StopwatchViewModel.swift */,
+				19DDE3FD70021E15DB5589A9 /* StopwatchView.swift */,
 			);
 			path = StopwatchView;
 			sourceTree = "<group>";
@@ -460,10 +484,18 @@
 				19DDE71A57F45A14CE2B42B5 /* AppNavigationController.swift in Sources */,
 				19DDE72F2125BA82C23A5550 /* AppTabBar.swift in Sources */,
 				19DDE882B7BE5777625C5CAD /* AppTabBarController.swift in Sources */,
-				19DDEBD89BC25A7CA858AF9F /* Color.swift in Sources */,
+				19DDEBD89BC25A7CA858AF9F /* ColorScheme.swift in Sources */,
 				19DDE2B43180E08D2347AB20 /* AddWorldClockViewController+UITableViewDelegate.swift in Sources */,
 				19DDED1F0C0B4FFEE7CFC2AB /* AddWorldClockViewController+UITableViewDataSource.swift in Sources */,
 				19DDE393E37FB940E4D1FCCA /* AddWorldClockViewController+UISearchBarDelegate.swift in Sources */,
+				19DDE9B42D2EA642A2F4557C /* AlarmView.swift in Sources */,
+				19DDE18E616D872A8F6B932D /* BedtimeViewModel.swift in Sources */,
+				19DDEBF3F31CCA77649AFD50 /* BedtimeView.swift in Sources */,
+				19DDEE2376859D2BA46CE78C /* AppView.swift in Sources */,
+				19DDEB337998C5BDFE09FDD3 /* StopwatchViewModel.swift in Sources */,
+				19DDE083A3D25A60119786DB /* StopwatchView.swift in Sources */,
+				19DDEA96571750BBD827AA75 /* TimerViewModel.swift in Sources */,
+				19DDED4A966AE7737CEDD1C1 /* TimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

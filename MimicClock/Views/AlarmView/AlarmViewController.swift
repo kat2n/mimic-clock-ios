@@ -1,6 +1,6 @@
 import UIKit
 
-class AlarmViewController: UIViewController {
+class AlarmViewController: AppViewController {
 
   var model: AlarmViewModel!
 
@@ -21,10 +21,14 @@ class AlarmViewController: UIViewController {
     super.init(coder: aDecoder)
   }
 
+  override func loadView() {
+    super.loadView()
+
+    view = AlarmView(self)
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    view.backgroundColor = Color.black
 
     model.testRealm()
   }
