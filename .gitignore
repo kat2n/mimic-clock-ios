@@ -4,3 +4,6 @@ Carthage
 vendor/bundle
 fastlane/report.xml
 fastlane/test_output
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
